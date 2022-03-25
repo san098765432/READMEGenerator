@@ -92,7 +92,7 @@ inquirer.prompt = (
     //Creating our createNewFile function
     function createNewFile(fileName,data){
     //fs
-    fs.writeFile(`./${fileName.toLowerCase().split('').join('')}.nd`,data,(err)=>{
+    fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`,data,(err)=>{
     if(err){
        console.log(err)
     }
