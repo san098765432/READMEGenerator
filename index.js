@@ -1,6 +1,7 @@
 //node modules
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { title } = require('process');
 
 //inquirer to generate questions
 inquirer.prompt(
@@ -44,12 +45,27 @@ inquirer.prompt(
     {
         type: 'input',
         message:'Enter your GitHub username',
-        name: 'Username',
+        name: 'GitHub Username',
     },
     {
         type: 'input',
         message:'Enter your email address',
         name: 'Email Address',
     }
-  ]
+]
+).then(({
+    Title,
+    Description,
+    Table of Contents,
+    Installation,
+    Usage,
+    License,
+    Contributing,
+    Tests,
+    Questions
+ })=>{
+//Template to be used
+const template =# ${title}
+
+}
 )
