@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 //Using inquirer to generate questions
-inquirer.prompt = (
+inquirer.prompt(
      [ 
       {    type: 'input',
           message: 'What is the project title?',
@@ -54,11 +54,11 @@ inquirer.prompt = (
     title,
     installation,
     instructions,
-    credits,
+    credit,
     license,
     git,
-    usage,
     email,
+    usage,
     contribution
     })=>{
     //Template to be used
