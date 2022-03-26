@@ -50,53 +50,20 @@ inquirer.prompt(
         name: 'Email Address',
        }
    ]
-   ).then(({
-    title,
-    installation,
-    instructions,
-    credit,
-    license,
-    git,
-    email,
-    usage,
-    contribution
-    })=>{
-    //Template to be used
-    const template = `# ${title}
+   ).
 
-   * [Installation] (#Installation)
-   * [Usage] (#Usage)
-   * [Contribution] (#Contribution)
-   * [Credits] (#Credits)
-   * [License] (#License)
-   # Installation
-   ${installation}
-   ##Usage
-   ${usage}
-   ## Contribution
-   ${contribution}
-   ## Instructions
-   ${instructions}
-   ## Credits
-   ${credit}
-   ## License
-   ${license}
-
-   # Contact
-   *GitHub :${git}
-   *Email :${email}`;
     //Function to generate the ReadMe using fs
     createNewFile(title,template);
-    }
-    );
+   
+
     //Creating our createNewFile function
     function createNewFile(fileName,data){
-    //fs
-    fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`,data,(err)=>{
-    if(err){
-       console.log(err)
-    }
-    console.log('README has been generated successfully');
-    })
 
-   } 
+    //fs
+   
+    fs.writeFile('./README.md', generateMarkdown(answers), function(err){
+        if(err){
+            console.log(err);
+        }
+    }
+    );
