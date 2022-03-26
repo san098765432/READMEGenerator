@@ -50,20 +50,17 @@ inquirer.prompt(
         name: 'Email Address',
        }
    ]
-   ).
+   ).then(function(answers) {
+    const readme = # ${answers.Title} ` `
 
-    //Function to generate the ReadMe using fs
-    createNewFile(title,template);
-   
 
-    //Creating our createNewFile function
+    //Creating createNewFile function 
     function createNewFile(fileName,data){
 
     //fs
-   
-    fs.writeFile('./README.md', generateMarkdown(answers), function(err){
-        if(err){
-            console.log(err);
-        }
+   fs.writeFile('./README.md', generateMarkdown(answers), function(err){
+    if(err){
+        console.log(err);
     }
-    );
+}
+);
