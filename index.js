@@ -32,7 +32,7 @@ inquirer
       name: "Tests",
     },
     {
-      type: "input",
+      type: "list",
       message: "Select the license applicable to your project",
       name: "License",
       choices: ["MIT", "ISC", "GNU", "APACHE 2.0", "NO LICENSE"],
