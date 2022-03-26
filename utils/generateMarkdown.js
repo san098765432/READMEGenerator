@@ -3,7 +3,7 @@ function generateMarkdown(answers) {
     return `# ${answers.Title}
 
 ## Description 
-${description}
+${answers.Description}
 
 ## Table of Contents
 
@@ -16,23 +16,23 @@ ${description}
 
 
    ## Installation
-   ${installation}
+   ${answers.Installation}
 
    ## Usage
-   ${usage}
+   ${answers.Usage}
 
    ## License
-   ${license}
+   ${answers.License}
 
    ## Contributing
-   ${contributing}
+   ${answers.Contributing}
 
    ## Tests
-   ${tests}
+   ${answers.Tests}
 
    ## Questions
-   ${questions}
-   *GitHub :${git}
-   *Email :${email}
+   ${answers.Questions}
+   *GitHub :${answers.Git}
+   *Email :${answers.Email}
    
    `}
