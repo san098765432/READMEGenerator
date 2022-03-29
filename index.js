@@ -3,8 +3,7 @@ const fs = require("fs");
 const generateMarkdown = "./utils/generateMarkdown";
 
 //Using inquirer to generate questions
-inquirer
-  .prompt([
+const questions = [
     { type: "input", message: "What is the project title?", name: "Title" },
     {
       type: "input",
@@ -40,25 +39,29 @@ inquirer
     {
       type: "input",
       message: "Enter your GitHub username",
-      name: "GitHub Username",
+      name: "Git",
     },
     {
       type: "input",
       message: "Enter your email address",
-      name: "Email Address",
+      name: "Email",
     },
-  ])
-  .then(function (answers) {
-    const readme = `${answers.Title}`;
-
-    createNewFile("readme-file", readme);
-  });
-
+  ];
+ 
 //Creating createNewFile function
 function createNewFile(fileName, data) {
-  fs.writeFile("./README.md", data, function (err) {
+  fs.writeFileSync(path.join(process.cwd(),fileName), data, function (err) {
     if (err) {
       console.log(err);
     }
   });
 } 
+
+function init () {
+  inquirer.prompt(questions).then(response => {
+  createNewFile("README.md", generateMarkdown({...response})) 
+  })
+}
+
+//calling init function
+init();
