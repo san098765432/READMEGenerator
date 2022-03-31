@@ -1,9 +1,9 @@
-# readme generator
+# Read Me Generator
 
-<img src="https://img.shields.io/badge/License-ISC-blueviolet.svg">
+<img src="https://img.shields.io/badge/License-NO LICENSE-blueviolet.svg">
 
 ## Description 
-create a readme
+This task involved creating a ReadMe Generator. This was done using a command-line application to generate a professional README.md file from a user's input using the Inquirer package.
 
 ## Table of Contents
 
@@ -16,22 +16,22 @@ create a readme
 
 
    ## Installation
-   none
+   This project requires the installation of the inquirer package and also node.
 
    ## Usage
-   hwk practice
+   Creating a ReadMe Generator allows the project creator to quickly and easily create a Read Me File, allowing them to devote more time to working on their project.
 
    ## License
-   ISC
+   NO LICENSE
 
    ## Contributing
-   me
+   Myself: Sanyiah Zulfiqar
 
    ## Tests
-   0
+   None
 
    ## Questions
-   If you have any questions you can contact me on 
-   Email :sanyiahzulfiqar1996@gmail.com
-   You can find more of my work at [san098765432](https://github.com/san098765432)
+   If you have any questions you can contact me in the following ways:
+   Email address :sanyiahzulfiqar1996@gmail.com
+   You can also find more of my work at [san098765432](https://github.com/san098765432)
    

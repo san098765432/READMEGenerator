@@ -33,9 +33,9 @@ ${answers.Description}
    ${answers.Tests}
 
    ## Questions
-   If you have any questions you can contact me on 
-   Email :${answers.Email}
-   You can find more of my work at [${answers.Git}](https://github.com/${answers.Git})
+   If you have any questions you can contact me in the following ways:
+   Email address :${answers.Email}
+   You can also find more of my work at [${answers.Git}](https://github.com/${answers.Git})
    `}
 
    module.exports = generateMarkdown;
