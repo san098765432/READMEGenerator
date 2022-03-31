@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = "./utils/generateMarkdown";
+const generateMarkdown = require("./utils/generateMarkdown");
 
 //Using inquirer to generate questions
 const questions = [
@@ -50,11 +50,7 @@ const questions = [
  
 //Creating createNewFile function
 function createNewFile(fileName, data) {
-  fs.writeFileSync(path.join(process.cwd(),fileName), data, function (err) {
-    if (err) {
-      console.log(err);
-    }
-  });
+  fs.writeFileSync(path.join(process.cwd(),fileName), data);
 } 
 
 function init () {
