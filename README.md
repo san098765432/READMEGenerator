@@ -35,3 +35,6 @@ This task involved creating a ReadMe Generator. This was done using a command-li
    Email address :sanyiahzulfiqar1996@gmail.com
    You can also find more of my work at [san098765432](https://github.com/san098765432)
    
+   # Link to walkthrough video
+   https://drive.google.com/file/d/1W6x0hKbZDp28g-BFT7E7Mi1Ueo37UHqh/view?usp=sharing
+   
